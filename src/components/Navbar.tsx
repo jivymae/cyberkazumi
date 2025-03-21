@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { MenuIcon, XIcon } from 'lucide-react';
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  return <nav className="border-b border-purple-900/30 backdrop-blur-md bg-black/80 sticky top-0 z-50">
+  return (
+    <nav className="border-b border-purple-900/30 backdrop-blur-md bg-black/80 sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
@@ -22,14 +24,18 @@ const Navbar = () => {
           </div>
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 rounded-md text-purple-200 hover:text-white hover:bg-purple-900/20 focus:outline-none">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 rounded-md text-purple-200 hover:text-white hover:bg-purple-900/20 focus:outline-none"
+            >
               {isMenuOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
             </button>
           </div>
         </div>
       </div>
       {/* Mobile menu */}
-      {isMenuOpen && <div className="md:hidden bg-black/95 backdrop-blur-md border-b border-purple-900/30">
+      {isMenuOpen && (
+        <div className="md:hidden bg-black/95 backdrop-blur-md border-b border-purple-900/30">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <MobileNavLink href="#home" onClick={() => setIsMenuOpen(false)}>
               Home
@@ -47,21 +53,38 @@ const Navbar = () => {
               Contact
             </MobileNavLink>
           </div>
-        </div>}
-    </nav>;
+        </div>
+      )}
+    </nav>
+  );
 };
-const NavLink = ({
-  href,
-  children
-}) => <a href={href} className="text-purple-200 hover:text-white text-sm uppercase tracking-wider font-medium relative group">
+
+const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
+  <a
+    href={href}
+    className="text-purple-200 hover:text-white text-sm uppercase tracking-wider font-medium relative group"
+  >
     {children}
     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 group-hover:w-full transition-all duration-300"></span>
-  </a>;
+  </a>
+);
+
 const MobileNavLink = ({
   href,
   onClick,
   children
-}) => <a href={href} onClick={onClick} className="text-purple-200 hover:text-white hover:bg-purple-900/20 block px-3 py-2 rounded-md text-base font-medium">
+}: {
+  href: string;
+  onClick: () => void;
+  children: React.ReactNode;
+}) => (
+  <a
+    href={href}
+    onClick={onClick}
+    className="text-purple-200 hover:text-white hover:bg-purple-900/20 block px-3 py-2 rounded-md text-base font-medium"
+  >
     {children}
-  </a>;
+  </a>
+);
+
 export default Navbar;
