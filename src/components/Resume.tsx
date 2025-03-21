@@ -69,31 +69,53 @@ const TimelineItem = ({
     </div>
   </div>;
 const experience = [{
-  title: 'Senior UI/UX Designer',
-  company: 'Tech Innovations Inc.',
-  period: '2021 - Present',
-  description: 'Lead designer for multiple high-profile projects, managing a team of designers and developers.'
+  title: 'Graphic Designer',
+  company: 'Self-Employed',
+  period: '2017 - Present',
+  description: 'Edited and enhance images for various clients, ensuring high quality visuals for their project.'
 }, {
-  title: 'UI Designer',
-  company: 'Digital Creatives',
-  period: '2019 - 2021',
+  title: 'Social Media Manager',
+  company: 'YouTube, Tiktok & Facebook Accounts',
+  period: '2022 - 2023',
   description: 'Created user interfaces for web and mobile applications, collaborating with development teams.'
 }, {
-  title: 'Junior Designer',
-  company: 'StartUp Studio',
-  period: '2018 - 2019',
-  description: 'Designed marketing materials and website interfaces for various startup clients.'
+  title: 'Assistant Secretary',
+  company: 'AC Realty Corp.',
+  period: '2019 - 2021',
+  description: 
+    'Developed and implemented content strategies to grow audience engagement and increase followers.\n' +
+    'Analyzed performance metrics to assess the effectiveness of the campaigns and optimize content accordingly.'
 }];
+
 const education = [{
   title: 'Bachelor of Science in Information Technology',
   company: 'Capitol University',
   period: '2021 - 2025',
-  description: 'Focuses on the study of technology, computer systems, software, networks, and data management.'
+  description: 'Managed office communications, assisted in maintaining records and preparing reports.'
 }, {
   title: 'TVL - Information and Communication Technology',
   company: 'Informatics Computer Institue',
   period: '2019 - 2021',
   description: 'Focuses on areas like computing, digital literacy, and the use of technology to communicate and process information.'
 }];
-const achievements = ['Best Design Award 2023 - Tech Innovation Summit', 'Featured Designer - Adobe Design Conference 2022', 'Speaker at UX/UI Conference 2021', 'Published article in Web Design Magazine'];
+const achievements = ['Digital Marketing Certified | HubSpot Academy April 3, 2024',
+                      'Google Analytics Certification | Great Learning April 2024',
+                      'Inbound Certified | HubSpot Academy April 3, 2024', 
+                      'Operation Management Certicate | Open Learn August 21, 2024',
+                      'Digital Skills: Artificial Intelligence (CPD) | Future Learn August 28, 2024',
+                      'Business Analysis & Process Management Certificate | Coursera September 5, 2024',
+                      'Content Marketing Strategy Certificate | SimpliLearn April 2, 2024',
+                      'Trust & Security with Google Cloud | Simplilearn/SkillUp April 2, 2024',
+                      'Math for Machine Learning (AWS)| Simplilearn April 2, 2024',
+                      'Configure and Deploy AWS Privatelink | Simplilearn April 16, 2024',
+                      'Photo Editing | Mind Luster April 1, 2024',
+                      'Cyber Security Endpoint Defense | SimpliLearn March 24, 2024',
+                      'Master ChatGPT | UniAthena September 14, 2024',
+                      'Essentials of Data Visualizatin using MS Excel | UniAthena September 4, 2024',
+                      'Basics of Data Science | UniAthena September 4, 2024',
+                      'Design App | Great Learning August 2024',
+                      'Google Analytics | Great Learning April 2024',
+                      'Foundation of Software Testing and Validation | Future Learn August 28, 2024',
+
+                    ];
 export default Resume;
