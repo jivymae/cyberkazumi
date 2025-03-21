@@ -85,15 +85,15 @@ const experience = [{
   description: 'Designed marketing materials and website interfaces for various startup clients.'
 }];
 const education = [{
-  title: 'Master in Digital Design',
-  company: 'Design University',
-  period: '2017 - 2018',
-  description: 'Specialized in user interface design and digital product development.'
+  title: 'Bachelor of Science in Information Technology',
+  company: 'Capitol University',
+  period: '2021 - 2025',
+  description: 'Focuses on the study of technology, computer systems, software, networks, and data management.'
 }, {
-  title: 'Bachelor in Computer Science',
-  company: 'Tech University',
-  period: '2013 - 2017',
-  description: 'Focus on software development and user experience design.'
+  title: 'TVL - Information and Communication Technology',
+  company: 'Informatics Computer Institue',
+  period: '2019 - 2021',
+  description: 'Focuses on areas like computing, digital literacy, and the use of technology to communicate and process information.'
 }];
 const achievements = ['Best Design Award 2023 - Tech Innovation Summit', 'Featured Designer - Adobe Design Conference 2022', 'Speaker at UX/UI Conference 2021', 'Published article in Web Design Magazine'];
 export default Resume;
