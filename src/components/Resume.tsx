@@ -77,21 +77,21 @@ const experience = [{
   title: 'Social Media Manager',
   company: 'YouTube, Tiktok & Facebook Accounts',
   period: '2022 - 2023',
-  description: 'Created user interfaces for web and mobile applications, collaborating with development teams.'
+  description: 'Developed and implemented content strategies to grow audience engagement and increase followers.\n' +
+    'Analyzed performance metrics to assess the effectiveness of the campaigns and optimize content accordingly.'
 }, {
   title: 'Assistant Secretary',
   company: 'AC Realty Corp.',
   period: '2019 - 2021',
   description: 
-    'Developed and implemented content strategies to grow audience engagement and increase followers.\n' +
-    'Analyzed performance metrics to assess the effectiveness of the campaigns and optimize content accordingly.'
+    'Managed office communications, assisted in maintaining records and preparing reports.'
 }];
 
 const education = [{
   title: 'Bachelor of Science in Information Technology',
   company: 'Capitol University',
   period: '2021 - 2025',
-  description: 'Managed office communications, assisted in maintaining records and preparing reports.'
+  description: 'Focuses on the use of technology to store, process, transmit, and manage data. '
 }, {
   title: 'TVL - Information and Communication Technology',
   company: 'Informatics Computer Institue',
