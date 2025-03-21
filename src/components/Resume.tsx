@@ -106,7 +106,7 @@ const achievements = ['Digital Marketing Certified | HubSpot Academy April 3, 20
                       'Business Analysis & Process Management Certificate | Coursera September 5, 2024',
                       'Content Marketing Strategy Certificate | SimpliLearn April 2, 2024',
                       'Trust & Security with Google Cloud | Simplilearn/SkillUp April 2, 2024',
-                      'Math for Machine Learning (AWS)| Simplilearn April 2, 2024',
+                      'Math for Machine Learning (AWS) | Simplilearn April 2, 2024',
                       'Configure and Deploy AWS Privatelink | Simplilearn April 16, 2024',
                       'Photo Editing | Mind Luster April 1, 2024',
                       'Cyber Security Endpoint Defense | SimpliLearn March 24, 2024',
