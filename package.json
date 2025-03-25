@@ -8,7 +8,8 @@
     "server": "node server.js",
     "build": "vite build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -38,5 +39,9 @@
     "tailwindcss": "3.4.17",
     "typescript": "^5.5.4",
     "vite": "^5.4.14"
-  }
+  },
+  "description": "1. Run `npm install`\r 2. Run `npm run dev`",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
 }
