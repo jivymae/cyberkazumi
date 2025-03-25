@@ -1,6 +1,15 @@
 import React, { useEffect, useRef } from 'react';
+
 const Hero = () => {
   const textRef = useRef(null);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -9,11 +18,14 @@ const Hero = () => {
         }
       });
     });
+
     if (textRef.current) {
       observer.observe(textRef.current);
     }
+
     return () => observer.disconnect();
   }, []);
+
   return <section id="home" className="min-h-screen flex flex-col justify-center relative py-20">
       <div className="absolute -left-40 top-1/3 w-80 h-80 bg-purple-600/20 rounded-full blur-3xl"></div>
       <div ref={textRef} className="max-w-3xl opacity-0 transition-opacity duration-1000">
@@ -30,11 +42,17 @@ const Hero = () => {
           boundaries and captivate audiences.
         </p>
         <div className="flex flex-wrap gap-4">
-          <button className="px-8 py-3 bg-purple-900/50 hover:bg-purple-800/70 border border-purple-500/50 rounded-md text-white font-medium transition-all duration-300 hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] relative overflow-hidden group">
+          <button 
+            onClick={() => scrollToSection('portfolio')}
+            className="px-8 py-3 bg-purple-900/50 hover:bg-purple-800/70 border border-purple-500/50 rounded-md text-white font-medium transition-all duration-300 hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] relative overflow-hidden group"
+          >
             <span className="relative z-10">View Portfolio</span>
             <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
           </button>
-          <button className="px-8 py-3 bg-transparent hover:bg-purple-900/20 border border-purple-500/50 rounded-md text-white font-medium transition-all duration-300 hover:border-purple-400">
+          <button 
+            onClick={() => scrollToSection('contact')}
+            className="px-8 py-3 bg-transparent hover:bg-purple-900/20 border border-purple-500/50 rounded-md text-white font-medium transition-all duration-300 hover:border-purple-400"
+          >
             Contact Me
           </button>
         </div>
@@ -47,4 +65,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;

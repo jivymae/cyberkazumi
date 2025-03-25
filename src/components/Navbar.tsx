@@ -4,11 +4,11 @@ import { MenuIcon, XIcon } from 'lucide-react';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="border-b border-purple-900/30 backdrop-blur-md bg-black/80 sticky top-0 z-50">
+    <nav className="border-b border-purple-900/30 backdrop-blur-md bg-black/80 fixed top-0 w-full z-[999]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-violet-600">
+            <span className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-violet-600">
               COMETA
             </span>
           </div>
