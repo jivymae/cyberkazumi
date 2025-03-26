@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-=======
+✨ Hi I'm Jivy Mae B. Cometa
 
->>>>>>> 1460108a044c8ff4529b1e274585e87b5e9b5916
-## Getting Started
 
-1. Run `npm install`
-2. Run `npm run dev`
+🚀 About Me
+ I'm a Junior QA Engineer with a passion for ensuring software quality through manual testing,
+              automation, and UI/UX design. I specialize in detecting and reporting bugs, improving user 
+              experience, and collaborating with development teams for efficient product delivery.
+

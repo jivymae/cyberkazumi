@@ -15,16 +15,15 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate designer and developer with over 5 years of
-              experience in creating cutting-edge digital experiences. My
-              approach combines innovative design thinking with technical
-              expertise to build solutions that not only look amazing but also
-              deliver exceptional user experiences.
+              I'm a Junior QA Engineer with a passion for ensuring software quality through manual testing,
+              automation, and UI/UX design. I specialize in detecting and reporting bugs, improving user 
+              experience, and collaborating with development teams for efficient product delivery.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding or designing, you can find me exploring new
-              technologies, contributing to open-source projects, or sharing my
-              knowledge through writing and mentoring.
+              Beyond QA, I have a background in digital marketing, content management, 
+              and system design, which gives me a unique perspective on building user-friendly and
+              scalable applications. My previous work includes developing a <b>Dental Clinic Management System</b> and 
+              contributing multiple projects.
             </p>
             <div className="flex flex-wrap gap-4 mt-6">
               {skills.map((skill, index) => <span key={index} className="px-4 py-2 bg-purple-900/20 border border-purple-500/30 rounded-full text-purple-300 text-sm">
