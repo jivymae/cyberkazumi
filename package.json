@@ -39,7 +39,7 @@
     "postcss": "latest",
     "tailwindcss": "3.4.17",
     "typescript": "^5.5.4",
-    "vite": "^5.4.14"
+    "vite": "^5.4.15"
   },
   "description": "1. Run `npm install`\r 2. Run `npm run dev`",
   "main": "postcss.config.js",
